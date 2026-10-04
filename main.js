@@ -77,9 +77,9 @@ function renderNavbar() {
     { kind: 'link', label: 'About', href: '#about' },
     {
       kind: 'dropdown', label: 'what we do', href: '#expertise', isRoute: true, items: [
-        { label: 'Generating, synthesising & translating evidence for EIDM', isRoute: true },
-        { label: 'Strengthening inter national, regional & national collaboration', isRoute: true },
-        { label: 'Capacity strengthening for evidence informed decision making', isRoute: true },
+        { label: 'Generating, synthesising & translating evidence for EIDM', href: '#expertise', isRoute: true },
+        { label: 'Strengthening inter national, regional & national collaboration', href: '#expertise', isRoute: true },
+        { label: 'Capacity strengthening for evidence informed decision making', href: '#expertise', isRoute: true },
       ]
     },
     { kind: 'link', label: 'Evidence & Publications', href: '#publications' },
