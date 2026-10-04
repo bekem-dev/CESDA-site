@@ -616,7 +616,7 @@ const PARTNERS_INFO = {
   },
   Brink: {
     name: "Brink Foundation",
-    url: "https://brink-foundation.org",
+    url: "https://jbi.global/collaboration/jbi-ethiopian-knowledge-translation-center-health-and-development",
     logo: "brink.png",
     desc: ""
   },
