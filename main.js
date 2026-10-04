@@ -145,7 +145,7 @@ function renderNavbar() {
   return `
   <div class="noise-overlay"></div>
   <nav class="nav-shell" id="navShell">
-    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="CESDA"></a>
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="CESDA"></a>
     <div class="nav-links">
       ${desktopLinks}
     </div>
