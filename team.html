@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The CESDA team — a multidisciplinary group of researchers, programme leaders, and academics committed to credible evidence for Africa." />
+  <title>Team — CESDA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="team-hero">
+      <div class="grid-bg"></div>
+      <span class="blob1"></span>
+      <span class="blob2"></span>
+      <div class="container-x inner">
+        <a class="team-back" href="index.html"><span id="ic-arrL"></span> Back to home</a>
+        <div class="max-w-4xl reveal">
+
+          <h1>The experts driving evidence informed policy.</h1>
+          <p class="body-lg">
+            A multidisciplinary team of researchers, programme leaders, and
+            academics — united by a shared commitment to credible,
+            context-relevant evidence for Africa's development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="section-pad bg-background">
+      <div class="container-x reveal">
+        <div class="team-leaders" id="teamLeaders" aria-label="Leadership"></div>
+        <div class="team-grid" id="teamGrid" aria-label="Team members"></div>
+      </div>
+
+      <div class="container-x mt-10">
+        <div class="cta-row reveal">
+          <div>
+            <h3>Our evidence team is ready to <em>collaborate.</em></h3>
+          </div>
+          <a href="index.html#contact" class="btn-primary shrink-0">Start a conversation <span id="ic-spark"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Modal -->
+    <div class="team-modal" id="teamModal">
+      <div class="team-modal-backdrop" id="teamModalBackdrop"></div>
+      <div class="team-modal-container">
+        <button type="button" class="team-modal-close" id="closeTeamModal" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="team-modal-content" id="teamModalContent">
+          <!-- Content injected via JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    const TEAM = [
+      {
+        name: "Sabit Ababor",
+        title: "General Manager",
+        grad: "from-primary",
+        linkedin: "https://www.linkedin.com/in/sabit-ababor-3b603a6a",
+        bio: "As General Manager, Sabit brings extensive experience in leadership and strategic management. He oversees CESDA's operations and ensures the organization meets its goals of advancing evidence-informed policy across Africa."
+      },
+      {
+        name: "Firmaye Bogale",
+        title: "Deputy General Manager",
+        grad: "from-accent",
+        linkedin: "https://www.linkedin.com/in/firmaye-bogale-172200123",
+        bio: "Firmaye Bogale, the Deputy General Manager and a recent recipient of the African Evidence Network award, specializes in operations management and driving impactful research outcomes."
+      },
+      {
+        name: "Birhanu Kenate",
+        title: "Researcher",
+        grad: "from-primary-dark",
+        linkedin: "https://www.linkedin.com/in/birhanu-kenate-363a52256",
+        bio: "Birhanu is a dedicated researcher focusing on data synthesis and generating high-quality evidence to support policy-making in public health and social development."
+      },
+      {
+        name: "Dabessa Gobena (PhD)",
+        title: "Researcher",
+        grad: "from-accent-dark",
+        linkedin: "https://www.linkedin.com/in/dabesa-gobena-733967134",
+        bio: "Dr. Dabessa Gobena leverages his extensive academic and field experience to design and lead rigorous evaluations that address key development challenges."
+      },
+      {
+        name: "Ermias Woldie",
+        title: "Researcher",
+        grad: "from-primary-2",
+        linkedin: "https://www.linkedin.com/in/ermias-woldie-378b1b26",
+        bio: "Ermias brings deep expertise in localized research metholodigies, working closely with communities to uncover context-relevant insights."
+      },
+      {
+        name: "Gelila Abraham",
+        title: "Researcher",
+        grad: "from-accent-2",
+        linkedin: "https://www.linkedin.com/in/gelila-abraham-884298313",
+        bio: "Gelila specializes in rapid reviews and qualitative research, translating complex findings into accessible policy briefs and tools."
+      },
+      {
+        name: "Getahun Fetensa",
+        title: "Researcher",
+        grad: "from-primary-light",
+        linkedin: "https://www.linkedin.com/in/getahun-fetensa-127167126",
+        bio: "Getahun focuses on evidence synthesis, ensuring that the latest scientific knowledge is effectively integrated into practical frameworks."
+      },
+      {
+        name: "Mamuye Hadis (PhD)",
+        title: "Researcher",
+        grad: "from-primary-3",
+        linkedin: "https://www.linkedin.com/in/mamuyehadis",
+        bio: "With a strong background in analytical methods, Dr. Mamuye leads complex systematic reviews to offer comprehensive insights for policymakers."
+      },
+      {
+        name: "Mirgissa Kaba (Prof)",
+        title: "Researcher",
+        grad: "from-accent-3",
+        linkedin: "https://www.linkedin.com/in/mirgissa-kaba-2926b235",
+        bio: "Professor Mirgissa Kaba is a renowned researcher whose academic excellence helps guide CESDA’s multidisciplinary research approach and strategic studies."
+      },
+      {
+        name: "Zelalem Kebede",
+        title: "Researcher",
+        grad: "from-primary-dark",
+        image: "zelalem.png",
+        linkedin: "https://www.linkedin.com/in/zelalem-kebede-ws-397baa249",
+        bio: "Zelalem has a proven track record in capacity building and community-based research, driving impactful dialogue among key stakeholders."
+      },
+      {
+        name: "Zewdie Birhanu (Prof)",
+        title: "Researcher",
+        grad: "from-accent-dark",
+        image: "zewdie.png",
+        linkedin: "https://www.linkedin.com/in/zewdie-birhanu-a50453234",
+        bio: "Professor Zewdie brings vast experience in policy translation, bridging the gap between rigorous research outputs and actionable insights for governments."
+      }
+    ];
+    const LEADER_TITLES = new Set([
+      "General Manager",
+      "Deputy General Manager",
+    ]);
+    const cleanName = (n) => n.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+    const initials = (n) =>
+      cleanName(n)
+        .split(" ")
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((w) => w[0])
+        .join("")
+        .toUpperCase();
+    const gradIcons = {
+      "from-primary": "<svg ...></svg>",
+    };
+    function avatar(name, grad, image) {
+      const id = cleanName(name).split(" ")[0].toLowerCase();
+      const src = image || `${id}.png`;
+      return `<div class="avatar ${grad}">
+        <div class="grain"></div>
+        <div class="blob-a"></div>
+        <div class="blob-b"></div>
+        <div class="initials">${initials(name)}</div>
+        <img src="${src}" alt="${name}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:10;" onload="this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+      </div>`;
+    }
+    const SVG_LINKEDIN =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>';
+    function card(m) {
+      const linkedin = m.linkedin
+        ? `<a class="member-linkedin" href="${m.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="${m.name} on LinkedIn" onclick="event.stopPropagation();">${SVG_LINKEDIN}</a>`
+        : "";
+      const jsObj = encodeURIComponent(JSON.stringify(m));
+      return `<div class="member-card" style="cursor:pointer;" onclick="openTeamModal('${jsObj}')">
+        <div class="member-card-inner">
+          ${avatar(m.name, m.grad, m.image)}
+          <div class="member-meta">
+            <h3 class="name">${m.name}</h3>
+            <p class="role">${m.title}</p>
+          </div>
+          ${linkedin}
+        </div>
+      </div>`;
+    }
+    // Split: leaders (General Manager, Deputy General Manager) on top, rest in grid below
+    const leaders = TEAM.filter(m => LEADER_TITLES.has(m.title));
+    const rest = TEAM.filter(m => !LEADER_TITLES.has(m.title)).sort((a, b) => a.name.localeCompare(b.name));
+    document.getElementById("teamLeaders").innerHTML = leaders.map(card).join("");
+    document.getElementById("teamGrid").innerHTML = rest.map(card).join("");
+
+    // Hydrate the small set of one-off icons
+    const ic = {
+      "ic-arrL": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>`,
+      "ic-spark": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>`,
+    };
+    for (const [id, svg] of Object.entries(ic)) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = svg;
+    }
+
+    // Modal Handling
+    const teamModal = document.getElementById('teamModal');
+    const teamModalContent = document.getElementById('teamModalContent');
+    const closeTeamModal = document.getElementById('closeTeamModal');
+    const teamModalBackdrop = document.getElementById('teamModalBackdrop');
+
+    window.openTeamModal = function (dataStr) {
+      const m = JSON.parse(decodeURIComponent(dataStr));
+      const inLink = m.linkedin
+        ? `<a href="${m.linkedin}" target="_blank" class="team-modal-in">${SVG_LINKEDIN}</a>`
+        : '';
+
+      teamModalContent.innerHTML = `
+        <div class="team-modal-avatar">
+          ${avatar(m.name, m.grad, m.image)}
+        </div>
+        <h3 class="team-modal-name">${m.name}</h3>
+        <p class="team-modal-role">${m.title}</p>
+        <p class="team-modal-bio">${m.bio || 'A dedicated professional advancing evidence-informed policy and research.'}</p>
+        ${inLink}
+      `;
+      teamModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeTeamM = () => {
+      teamModal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    };
+
+    closeTeamModal.addEventListener('click', closeTeamM);
+    teamModalBackdrop.addEventListener('click', closeTeamM);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && teamModal.classList.contains('is-open')) {
+        closeTeamM();
+      }
+    });
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

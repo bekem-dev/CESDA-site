@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="CESDA — Center for Evidence Synthesis, Support & Development in Africa. Bridging the gap between research and policy across the continent." />
+  <title>CESDA | Center for Evidence-synthesis, support & Development in Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Mobile hero fixes */
+    @media (max-width: 768px) {
+      #home {
+        padding-top: 90px !important;
+        min-height: auto !important;
+      }
+
+      #home img[alt="CESDA Logo"] {
+        max-width: 280px !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .hero-images-row {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+      }
+
+      .hero-images-row img {
+        min-width: 100vw !important;
+        width: 100vw !important;
+        height: 45vh !important;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+      }
+
+      .who-we-are-grid {
+        flex-direction: column !important;
+      }
+
+      .who-we-are-grid img {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home"
+      style="background-color: #ffffff; text-align: center; padding: 100px 0 0 0; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden;">
+
+      <!-- Logo in middle -->
+      <img src="assets/logo.png" alt="CESDA Logo"
+        style="display: block; margin: auto auto 2rem auto; max-width: 900px; width: 90%; height: auto; mix-blend-mode: multiply;" />
+
+      <!-- Three Images Edge-to-Edge -->
+      <div class="hero-images-row"
+        style="display: flex; justify-content: flex-start; gap: 0; width: 100vw; margin: 0; padding: 0;">
+        <img src="image1.JPG" alt="Gallery Image 1" style="width: 33.3333%; height: 50vh; object-fit: cover;" />
+        <img src="image2.jpg" alt="Gallery Image 2" style="width: 33.3333%; height: 50vh; object-fit: cover;" />
+        <img src="image3.jpg" alt="Gallery Image 3" style="width: 33.3333%; height: 50vh; object-fit: cover;" />
+      </div>
+    </section>
+
+    <!-- ============ WHO WE ARE ============ -->
+    <section id="about" class="section-pad relative" style="overflow: hidden">
+      <div class="absolute inset-0 grid-bg" style="opacity: 0.5"></div>
+      <div class="container-x relative">
+        <h2 class="h-section mb-6 reveal">Who we are</h2>
+        <div class="who-we-are-grid reveal" style="display: flex; gap: 3rem; align-items: center;">
+          <div style="flex: 1;">
+            <p class="body-lg text-ink/80" style="line-height: 1.8;">
+              CESDA is a pioneering private limited
+              company founded by EIDM champions
+              with 20+ years of collective experience in
+              research, policy, and development.
+              Established as an independent initiative,
+              CESDA works to transform how evidence
+              informs policy and programming across
+              Ethiopia and Africa.
+            </p>
+          </div>
+          <img src="cesda team.jpg" alt="CESDA Team"
+            style="width: 52%; max-width: 620px; border-radius: 12px; object-fit: cover; box-shadow: 0 8px 24px rgba(0,0,0,0.12); margin-left: auto;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDATION ============ -->
+    <section id="foundation" class="section-pad section-foundation">
+      <div class="container-x">
+
+        <div class="md-grid-3">
+
+          <article class="pillar-card reveal" data-delay="1">
+            <div class="pillar-icon"><span id="ic-eye"></span></div>
+            <h3>Vision</h3>
+            <p class="body-base text-ink/75">
+              To be Africa's premier hub to advance evidence-informed policy
+              and development.
+            </p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-icon"><span id="ic-compass-nav"></span></div>
+
+            <h3>Mission</h3>
+            <p class="body-base text-ink/75">
+              To drive evidence-informed decision-making in Africa by ensuring
+              access to high-quality policy-relevant evidence, empowering
+              policymakers and programmers, and fostering collaboration for
+              equitable and sustainable development.
+            </p>
+          </article>
+          <article class="pillar-card reveal" data-delay="2">
+            <div class="pillar-icon"><span id="ic-shield"></span></div>
+
+            <h3>Core values</h3>
+            <p class="body-base text-ink/75">
+              Our work is anchored in integrity, professionalism, and ethical
+              practice. We support the achievement of high-impact policy outcomes through a
+              dedication to excellence, utilising participatory and
+              collaborative frameworks that bring diverse voices to the table.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+
+    <section id="expertise" class="section-expertise">
+      <div class="grid-bg"></div>
+      <span class="blob1"></span>
+      <span class="blob2"></span>
+      <div class="container-x relative">
+        <div class="max-w-3xl mb-14 reveal">
+          <h2 class="h-section">What we do</h2>
+        </div>
+        <div class="lg-grid-3">
+
+          <!-- ── Pillar 1: Evidence ── -->
+          <div class="pillar-block reveal">
+            <h3>
+              Generating, synthesising &amp; translating
+              evidence for EIDM
+            </h3>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('EVIDENCE_GEN')">
+              <span class="ico"><span id="ic-beaker"></span></span>
+              <div>
+                <h4>Evidence generation</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('EVIDENCE_SYNTH')">
+              <span class="ico"><span id="ic-filesearch"></span></span>
+              <div>
+                <h4>Evidence synthesis</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('KT_PRODUCTS')">
+              <span class="ico"><span id="ic-filetext"></span></span>
+              <div>
+                <h4>Knowledge translation</h4>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Pillar 2: Collaboration ── -->
+          <div class="pillar-block reveal" data-delay="1">
+            <h3>
+              Strengthening
+              inter national, regional &amp; national collaboration
+            </h3>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('NETWORKS')">
+              <span class="ico"><span id="ic-network"></span></span>
+              <div>
+                <h4>Networks &amp; communities of practice</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('CONVENINGS')">
+              <span class="ico"><span id="ic-message"></span></span>
+              <div>
+                <h4>Convenings &amp; dialogues</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('COCREATED')">
+              <span class="ico"><span id="ic-spark"></span></span>
+              <div>
+                <h4>Co-created knowledge</h4>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Pillar 3: Capacity Building ── -->
+          <div class="pillar-block reveal" data-delay="2" id="training">
+            <h3>
+              Capacity strengthening for evidence informed decision making
+            </h3>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('CSRTP')">
+              <span class="ico"><span id="ic-grad"></span></span>
+              <div>
+                <h4>Comprehensive Systematic Review (CSRTP)</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('SCOPING')">
+              <span class="ico"><span id="ic-layers"></span></span>
+              <div>
+                <h4>Scoping Review</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('RAPID')">
+              <span class="ico"><span id="ic-clockL"></span></span>
+              <div>
+                <h4>Rapid Review</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('POLICY')">
+              <span class="ico"><span id="ic-filetext2"></span></span>
+              <div>
+                <h4>Policy Brief</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('INTRO_EIDM')">
+              <span class="ico"><span id="ic-spark2"></span></span>
+              <div>
+                <h4>Introduction to EIDM</h4>
+
+              </div>
+            </div>
+            <div class="exp-card" style="cursor:pointer;" onclick="openExpertiseModal('MENTORSHIP')">
+              <span class="ico"><span id="ic-globe"></span></span>
+              <div>
+                <h4>Mentorship &amp; institutional support</h4>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVIDENCE & PUBLICATIONS ============ -->
+    <section id="publications" class="section-pad bg-background" style="overflow: hidden">
+      <div class="container-x">
+        <div class="max-w-3xl mb-14 reveal">
+
+          <h2 class="h-section mb-5">Evidence &amp; publications</h2>
+
+        </div>
+
+        <div id="reports" class="mb-16 reveal">
+          <article class="work-card">
+            <div class="work-img">
+              <img src="pregnant.png" alt="Teenage pregnancy research">
+              <div class="veil"></div>
+              <div class="tags">
+                <span class="tag-primary">Maternal Health</span>
+                <span class="tag-primary">Adolescent Wellbeing</span>
+                <span class="tag-primary">Ethiopia</span>
+              </div>
+            </div>
+            <div class="work-content">
+              <h3>Teenage Pregnancy in Oromia</h3>
+              <p class="body-lg text-ink/75 mb-6 max-w-2xl">
+                CESDA concluded a comprehensive study examining the factors driving teenage pregnancy and strategies for
+                its prevention in Oromia, Ethiopia.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <a href="report.html" class="btn-primary">See the report <span id="ic-file2"></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ============ NEWS & UPDATES ============ -->
+    <section id="news" class="section-pad bg-background">
+      <div class="container-x">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12 reveal">
+          <div class="max-w-2xl">
+
+            <h2 class="h-section">
+              News & Isights
+            </h2>
+          </div>
+          <a href="news.html" class="btn-outline shrink-0">View all news <span id="ic-au3"></span></a>
+        </div>
+
+        <div class="news-grid">
+          <!-- News 1 -->
+          <article class="news-card reveal">
+            <div class="news-card-img">
+              <img src="news1.jpg" alt="CESDA contract signing for Oromia research" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">Research</span>
+                <span class="news-date">2024</span>
+              </div>
+              <h3>Implementation Research in Oromia</h3>
+              <p>
+                CESDA is going to start a 2 year implementation research in
+                Oromia hence the contract signing process is initiated
+                accordingly.
+              </p>
+            </div>
+          </article>
+
+          <!-- News 2 -->
+          <article class="news-card reveal" data-delay="1">
+            <div class="news-card-img">
+              <img src="news2.jpg" alt="Firmaye Bogale receiving African Evidence Network award" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">Award</span>
+                <span class="news-date">2024</span>
+              </div>
+              <h3>African Evidence Network Award</h3>
+              <p>
+                The 2024 African Evidence Network young leaders of EIDM award won by Miss Firmaye
+                Bogale.
+              </p>
+            </div>
+          </article>
+
+          <!-- News 3 -->
+          <article class="news-card reveal" data-delay="2">
+            <div class="news-card-img">
+              <img src="news3.jpg" alt="JBI systematic review training in Adama" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">Training</span>
+                <span class="news-date">2026</span>
+              </div>
+              <h3>Systematic Review Training in Adama</h3>
+              <p>
+                JBI-Ethiopian Knowledge Translation Center for Health and
+                Development, hosted by CESDA, successfully completed the 2026
+                second round comprehensive systematic review training in
+                Adama, Ethiopia.
+              </p>
+            </div>
+          </article>
+
+          <!-- News 4 -->
+          <article class="news-card reveal">
+            <div class="news-card-img">
+              <img src="news4.jpg" alt="HPV evidence repository user test at Eliana hotel" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">User test</span>
+                <span class="news-date">2026</span>
+              </div>
+              <h3>HPV Evidence Repository User Test</h3>
+              <p>
+                CESDA conducted HPV evidence repository user test at Eliana
+                Hotel, Addis Ababa in August 01, 2026.
+              </p>
+            </div>
+          </article>
+
+          <!-- News 5 -->
+          <article class="news-card reveal" data-delay="1">
+            <div class="news-card-img">
+              <img src="news5.jpg" alt="CESDA and GTF contractual agreement signing" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">Partnership</span>
+                <span class="news-date">2024</span>
+              </div>
+              <h3>Teenage Pregnancy Study with GTF</h3>
+              <p>
+                CESDA signed a contractual agreement with GTF to conduct a
+                comprehensive study examining the factors driving teenage
+                pregnancy and strategies for its prevention in Oromia,
+                Ethiopia in 2024.
+              </p>
+            </div>
+          </article>
+
+          <!-- News 6 -->
+          <article class="news-card reveal" data-delay="2">
+            <div class="news-card-img">
+              <img src="news6.jpg" alt="CESDA at 2026 African Evidence Summit" />
+              <div class="news-card-overlay"></div>
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-meta">
+                <span class="tag-primary">Conference</span>
+                <span class="news-date">2026</span>
+              </div>
+              <h3>African Evidence Summit 2026</h3>
+              <p>
+                CESDA participated in the 2026 African Evidence Summit
+                conducted in Addis Ababa, Ethiopia.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ PARTNERS ============ -->
+    <section id="partners" class="section-pad bg-background" style="overflow: hidden">
+      <div class="container-x">
+        <div class="max-w-3xl mb-14 reveal">
+
+          <h2 class="h-section mb-5">Our partners</h2>
+
+        </div>
+        <div class="md-grid-3">
+          <article class="pillar-card reveal partner-card" style="cursor: pointer;" onclick="openPartnerModal('JBI')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="jbi.png" alt="JBI" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>JBI Joanna Briggs Institute</h3>
+
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="1" style="cursor: pointer;"
+            onclick="openPartnerModal('ALIVE')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="alive.png" alt="ALIVE" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>ALIVE Future Evidence</h3>
+
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="2" style="cursor: pointer;"
+            onclick="openPartnerModal('Brink')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="brink.png" alt="Brink Foundation" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>Brink Foundation</h3>
+
+          </article>
+        </div>
+        <div class="md-grid-3 mt-12">
+          <article class="pillar-card reveal partner-card" style="cursor: pointer;" onclick="openPartnerModal('PACE')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="pace.png" alt="PACE" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>PACE Pan African Collective for Evidence</h3>
+
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="1" style="cursor: pointer;"
+            onclick="openPartnerModal('ACRES')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="acres.png" alt="ACRES" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>ACRES Center for Rapid Evidence Synthesis</h3>
+
+          </article>
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="1" style="cursor: pointer;"
+            onclick="openPartnerModal('OHB')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="OHB.png" alt="OHB" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>OHB Oromia Health Bereau</h3>
+
+          </article>
+        </div>
+        <div class="md-grid-3 mt-12">
+          <article class="pillar-card reveal partner-card" style="cursor: pointer;" onclick="openPartnerModal('PC')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="PC.png" alt="PC" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>Pioneer Collage</h3>
+
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="1" style="cursor: pointer;"
+            onclick="openPartnerModal('OEB')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="OEB.png" alt="OEB" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>OEB Oromia Education Bereau</h3>
+
+          </article>
+          </article>
+          <article class="pillar-card reveal partner-card" data-delay="1" style="cursor: pointer;"
+            onclick="openPartnerModal('JU')">
+            <div class="pillar-icon"
+              style="background: transparent; height: 4rem; width: 4rem; display: flex; align-items: center; justify-content: center;">
+              <img src="JU.png" alt="JU" style="height: 100%; width: auto; object-fit: contain;" />
+            </div>
+            <h3>JU Jimma University</h3>
+
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section-pad bg-background relative" style="overflow: hidden">
+      <span class="absolute" style="
+            top: 0;
+            right: 0;
+            width: 31rem;
+            height: 31rem;
+            background: rgba(10, 64, 116, 0.08);
+            border-radius: 50%;
+            filter: blur(64px);
+            pointer-events: none;
+          "></span>
+      <div class="container-x relative">
+        <div class="grid-12">
+          <div class="col-span-5">
+
+            <h2 class="h-section mb-5 reveal">
+              Get in touch
+
+            </h2>
+
+
+            <div class="reveal">
+              <a class="contact-card" href="mailto:info@cesdaf.org">
+                <span class="ico"><span id="ic-mailL"></span></span>
+                <div>
+                  <p class="label">Email us</p>
+                  <p class="primary">info@cesdaf.org</p>
+                  <p class="detail">We respond within 1–2 business days</p>
+                </div>
+              </a>
+              <a class="contact-card" href="tel:+251947999900">
+                <span class="ico"><span id="ic-phoneL"></span></span>
+                <div>
+                  <p class="label">Call us</p>
+                  <p class="primary">+251 947 999 900</p>
+                  <p class="detail">
+                    +251 947 999 922 · Mon–Fri, 9:00–17:00 EAT
+                  </p>
+                </div>
+              </a>
+              <div class="contact-card">
+                <span class="ico"><span id="ic-pinL"></span></span>
+                <div>
+                  <p class="label">Visit us</p>
+                  <p class="primary">
+                    Lideta Sub city, Woreda 9, Addis Ababa, Ethiopia
+                  </p>
+                  <p class="detail">Serving partners across Africa</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-span-7">
+            <div class="rounded-3xl bg-surface border border-divider consult-card p-6 sm:p-10" style="
+                  border-radius: 1.5rem;
+                  border: 1px solid var(--divider);
+                  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    
+                ">
+
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold leading-tight mb-8">
+
+              </h3>
+              <div id="formStatus">
+                <form id="contactForm" class="flex flex-col gap-5">
+                  <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
+                    style="display:none" />
+                  <div class="sm-grid-3">
+                    <div>
+                      <label class="label-base" for="name">Full name <span class="text-primary">*</span></label>
+                      <input class="input-base" id="name" name="name" type="text" placeholder="e.g. bekam sabit"
+                        required />
+                    </div>
+                    <div>
+                      <label class="label-base" for="email">Email <span class="text-primary">*</span></label>
+                      <input class="input-base" id="email" name="email" type="email" placeholder="you@organization.org"
+                        required />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="label-base" for="organization">Organization</label>
+                    <input class="input-base" id="organization" name="organization" type="text"
+                      placeholder="Ministry, NGO, university…" />
+                  </div>
+                  <div>
+                    <label class="label-base" for="subject">Subject <span class="text-primary">*</span></label>
+                    <input class="input-base" id="subject" name="subject" type="text" placeholder="How can we help?"
+                      required />
+                  </div>
+                  <div>
+                    <label class="label-base" for="message">Message <span class="text-primary">*</span></label>
+                    <textarea class="input-base" id="message" name="message" rows="5"
+                      placeholder="Tell us about your project, policy question, or research need…" required></textarea>
+                  </div>
+                  <button type="submit" class="btn-primary" style="width: 100%; justify-content: center">
+                    Send message <span id="ic-au3"></span>
+                  </button>
+                  <p style="
+                        font-size: 11px;
+                        color: rgba(90, 122, 153, 0.8);
+                        text-align: center;
+                        margin: 0;
+                        padding-bottom: 10px;
+                      ">
+                    By submitting, you agree to be contacted by the CESDA team
+                    regarding your enquiry.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-cta mt-20">
+          <div class="inner">
+            <div>
+
+              <h3>Partner with us to turn evidence into impact.</h3>
+              <p class="body-lg">
+                Let's co-create rigorous, policy-relevant evidence for
+                equitable and sustainable development.
+              </p>
+            </div>
+            <div class="justify-end">
+              <a href="#contact" class="btn-primary">Start a conversation <span id="ic-au4"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PARTNER MODAL ============ -->
+  <div class="report-modal" id="partnerModal">
+    <div class="report-modal-backdrop" id="partnerModalBackdrop"></div>
+    <div class="report-modal-container">
+      <div class="report-modal-content" id="partnerModalContent">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TRAINING MODAL ============ -->
+  <div class="report-modal" id="trainingModal">
+    <div class="report-modal-backdrop" id="trainingModalBackdrop"></div>
+    <div class="report-modal-container">
+      <div class="report-modal-content" id="trainingModalContent">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EXPERTISE MODAL ============ -->
+  <div class="report-modal" id="expertiseModal">
+    <div class="report-modal-backdrop" id="expertiseModalBackdrop"></div>
+    <div class="report-modal-container">
+      <div class="report-modal-content" id="expertiseModalContent">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    // Inline icon hydration (no extra request, mirrors the React lucide components)
+    const ic = {
+      "ic-map": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+      "ic-quote": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>`,
+      "ic-building": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>`,
+      "ic-users": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+      "ic-globe2": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
+      "ic-compass-nav": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
+      "ic-eye": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>`,
+      "ic-shield": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>`,
+      "ic-microscope": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>`,
+      "ic-layers": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.18-9.17 4.16a2 2 0 0 1-1.66 0L2 12.18"/><path d="m22 17.18-9.17 4.16a2 2 0 0 1-1.66 0L2 17.18"/></svg>`,
+      "ic-languages": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>`,
+      "ic-compass": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
+      "ic-au1": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`,
+      "ic-ar1": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+      "ic-ar2": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+      "ic-ar3": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+      "ic-ar4": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+      "ic-au2": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`,
+      "ic-au3": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`,
+      "ic-au4": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`,
+      "ic-file": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
+      "ic-book": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>`,
+      "ic-sparkles": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>`,
+      "ic-sparkles-2": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>`,
+      "ic-sparkles-3": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>`,
+      "ic-beaker": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3h15"/><path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"/><path d="M6 14h12"/></svg>`,
+      "ic-filesearch": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><circle cx="11.5" cy="14.5" r="2.5"/><path d="M13.27 16.27 15 18"/></svg>`,
+      "ic-filetext": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
+      "ic-network": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>`,
+      "ic-message": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+      "ic-spark": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>`,
+      "ic-shieldL": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>`,
+      "ic-award": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>`,
+      "ic-clockL": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+      "ic-grad": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
+      "ic-globe": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
+      "ic-spark2": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>`,
+      "ic-spark3": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>`,
+      "ic-ar5": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+      "ic-shieldL2": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>`,
+      "ic-microscope2": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>`,
+      "ic-file2": `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
+      "ic-heart": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5z"/><path d="M12 5 9.04 7.96a2.06 2.06 0 0 0 0 2.94l1.42 1.42a2.06 2.06 0 0 0 2.94 0L17 9.5"/></svg>`,
+      "ic-mailL": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
+      "ic-phoneL": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+      "ic-pinL": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+      "ic-clockSm": `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+      "ic-cal": `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>`,
+      "ic-filetext2": `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
+    };
+    for (const [id, svg] of Object.entries(ic)) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = svg;
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
